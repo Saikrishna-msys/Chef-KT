@@ -2,7 +2,7 @@ Chef_KT1
 
 What is a workstation?
 
-Chef Workstation is a single package you can install on your local system that collects a variety of tools you can use to get started with inspect and chef.these include tools for ad-hoc execution of security scans and configuration tasks as well as a library of development tools you can use to formalize the testing and promotion of your chef's policy.
+Chef Workstation is a single package you can install on your local system that collects a variety of tools you can use to get started with inspect and chef.these include tools for ad-hoc execution of security scans and configuration tasks as well as a library of development tools you can use to formalize the testing and promotion of chef's policy.
 
 
 What is a node?
