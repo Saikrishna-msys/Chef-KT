@@ -1,31 +1,42 @@
-Chef_KT2
-
 What is a workstation?
 
 Chef Workstation is a single package you can install on your local system that collects a variety of tools you can use to get started with inspect and chef.these include tools for ad-hoc execution of security scans and configuration tasks as well as a library of development tools you can use to formalize the testing and promotion of  the chef's policy.
 
+Tools in chef workstation includes
+-> Chef CLI
+-> knife
+-> Chef Infra Client
+-> Chef Habitat
+-> Chef InSpec
+-> Cookstyle
+-> Test Kitchen
+
 
 What is a node?
-
 
 A node is any machine—physical, virtual, cloud, network device. that is under management by Chef. In other words, a physical node is any active device attached to a network that can run a chef-client and also allow that chef-client to communicate with a Chef server.
 
 
 What is Chef Server?
 
-
 Chef Server is the center of the workstation and the nodes. All the cookbooks, recipes, and metadata are stored in Chef Server. The workstation sends the cookbook to the server using a knife. The nodes communicate with the server using the Chef client.
 
+Chef Infra server components
+-> Clients
+-> Load Balancer
+-> Chef Manage
+-> Chef Infra Server
+-> Bookshelf
+-> Messages
+-> PostgreSQL
 
 
 How to bootstrap a node? What does exactly bootstrapping a node means?
-
 
 A bootstrapping node also konw as rendezvous host is node in an overly network that provides intial configuration information to newly joining nodes so that they successfully join the overlay network. bootstrapping nodes are perdominantly found in decentralized peer to peer networks.
 
 
 What is the use of running Chef-Client periodically?
-
 
 Chef-Client one of the key components of Chef node, which retrieves the cookbooks from the Chef server and executes them on the node.
 
@@ -34,17 +45,33 @@ What is a Cookbook?
 
 Cookbooks are fundamental working units of Chef, which consists of all the details related to working units, having the capability to modify configuration and the state of any system configured as a node on Chef infrastructure.
 
+-> Recipes that specify the resources to use and the order in which they are to be applied
+-> Attribute values
+-> File distributions
+-> Templates
+-> Extensions to Chef, such as custom resources and libraries
 
-How to upload a cookbook on Chef Server? (basically get acquainted
-with those commands)
+Components of cookbook
+-> Recipes
+-> Files
+-> Attributes
+-> Libraries
+-> Custom resources
+-> Templates
+-> Ohai Plugins
+-> Metadata
+
+
+How to upload a cookbook on Chef Server? 
 
 Upload a cookbook to Chef infra server
-It can be done using knife upload command
+
 knife cookbook upload cookbook_name
 
 
-How to update a cookbook which is uploaded on Chef Server?
-
 Update a existing cookbook
+
 knife cookbook upload cookbook_name --force
+
+
 
