@@ -4,7 +4,7 @@
 # https://docs.chef.io/policyfile/
 
 # A name that describes what the system you're building with Chef does.
-name 'corn_cook_book_sample'
+name 'corn_cookbook_sample'
 
 # Where to find external cookbooks:
 default_source :supermarket

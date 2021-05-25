@@ -1,4 +1,4 @@
-# InSpec test for recipe COOKBOOK_NAME::default
+# InSpec test for recipe corn_cookbook_sample::default
 
 # The Chef InSpec reference, with examples and extensive documentation, can be
 # found at https://docs.chef.io/inspec/resources/
