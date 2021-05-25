@@ -1,8 +1,8 @@
-name 'COOKBOOK_NAME'
+name 'corn_cookbook_sample'
 maintainer 'The Authors'
 maintainer_email 'you@example.com'
 license 'All Rights Reserved'
-description 'Installs/Configures COOKBOOK_NAME'
+description 'Installs/Configures corn_cookbook_sample'
 version '0.1.0'
 chef_version '>= 15.0'
 
